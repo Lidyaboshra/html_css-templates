@@ -1,0 +1,1230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px
+}
+
+img[src="img/logo.png"] {
+    width: 100px;
+    height: 41px;
+}
+
+.icon {
+    position: relative;
+}
+
+.spans span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.spans {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.spans span:first-child {
+    width: 100%;
+}
+
+
+
+.spans span:nth-child(2) {
+    width: 60%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.spans span:last-child {
+    width: 100%;
+}
+
+.icon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+
+.icon ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+.icon ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+a {
+    background-color: transparent;
+}
+
+.icon ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.icon ul li a:hover {
+    padding-left: 25px;
+}
+
+.icon:hover .spans span:nth-child(2) {
+    width: 100%;
+}
+
+.icon:hover ul {
+    display: block;
+}
+
+.the-body {
+    background-image: url("../img/landing.jpg");
+    background-size: cover;
+    height: calc(100vh - 24px);
+
+}
+
+h1 {
+    color: #10cab7;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.the-body p {
+    max-width: 385px;
+    font-size: 23px;
+    color: #00000096;
+    letter-spacing: 1px;
+    line-height: 34.5px;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    grid-template-rows: 300px;
+    grid-template-areas: ". . . . i d w . . . .";
+    padding: 10px;
+    background-color: #f6f6f6;
+    line-height: 25.5px;
+
+
+}
+
+.idea {
+    grid-area: i;
+    padding: 10px;
+}
+
+.diamond {
+    grid-area: d;
+    padding: 10px;
+}
+
+.wide-world {
+    grid-area: w;
+    padding: 10px;
+}
+
+img[src="img/idea.png"],
+img[src="img/diamond.png"],
+img[src="img/worldwide.png"] {
+    width: 60;
+    height: 60px;
+    margin: 10px;
+}
+
+.all h3 {
+    line-height: 23.5px;
+    font-weight: bolder;
+    letter-spacing: -0.5px;
+    padding: 10px;
+}
+
+.all p {
+    font-size: 16px;
+    max-width: 241px;
+    word-break: break-word;
+    color: #00000091;
+    text-align: center;
+}
+
+/* services */
+.middle {
+    margin-bottom: 20px;
+}
+
+.four-sections {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: 250px 250px;
+    grid-template-areas: ". . . g g d d s s . . . "". . . u u w w s s . . ."
+
+}
+
+.graphic {
+    grid-area: g;
+}
+
+.design {
+    grid-area: d;
+}
+
+.ui {
+    grid-area: u;
+}
+
+.develop {
+    grid-area: w;
+}
+
+.image {
+    grid-area: s;
+}
+
+
+.middle h2,
+.portfolio h2,
+.about h2,
+.contact h2 {
+    font-size: 90px;
+    padding: 10px;
+    color: #00000012;
+    position: relative;
+    margin: 20px;
+}
+
+
+
+.middle h2::after {
+    content: "Don't be busy, be productive";
+    position: absolute;
+    top: 77px;
+    left: 52px;
+    font-size: 21px;
+    color: #0000006b;
+}
+
+.graphic,
+.design,
+.develop,
+.ui,
+.image {
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.develop {
+    height: 212px;
+}
+
+.four-sections p {
+    max-width: 300px;
+    word-break: break-word;
+}
+
+img[src="img/services.jpg"] {
+    width: 260px;
+}
+
+.image {
+    position: relative;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    background-color: #2c4755;
+    right: -27px;
+    top: -21px;
+    height: 400px;
+    width: 109px;
+    z-index: -1;
+}
+
+.four-sections h3 {
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.four-sections p {
+    padding: 10px;
+    margin: 10px;
+    line-height: 25px;
+    color: #00000080;
+    text-align: left;
+}
+
+/* Icons  */
+.design,
+.develop,
+.ui,
+.graphic {
+    position: relative;
+}
+
+.graphic::before {
+    position: absolute;
+    content: "";
+    background: url(../img/color-palette.png) no-repeat;
+    display: inline-block;
+    top: 28px;
+    left: -31px;
+    width: 50px;
+    height: 50px;
+    background-size: 40px 40px;
+}
+
+.design::before {
+    position: absolute;
+    content: "";
+    background: url(../img/vector.png) no-repeat;
+    display: inline-block;
+    top: 28px;
+    left: -31px;
+    width: 50px;
+    height: 50px;
+    background-size: 40px 40px;
+}
+
+.ui::before {
+    position: absolute;
+    content: "";
+    background: url(../img/sketch.png) no-repeat;
+    display: inline-block;
+    top: 28px;
+    left: -31px;
+    width: 50px;
+    height: 50px;
+    background-size: 40px 40px;
+}
+
+.develop::before {
+    position: absolute;
+    content: "";
+    background: url(../img/pencil-and-ruler.png) no-repeat;
+    display: inline-block;
+    top: 28px;
+    left: -31px;
+    width: 50px;
+    height: 50px;
+    background-size: 40px 40px;
+}
+
+/* portfolio */
+.portfolio {
+    background-color: #f6f6f6;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.portfolio h2::after {
+    content: "If you do it right,it will last forever.";
+    position: absolute;
+    top: 77px;
+    left: 37px;
+    font-size: 19px;
+    color: #0000006b;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: 400px;
+    grid-template-areas: "po po po po pt pt pt pt ph ph ph ph";
+
+
+}
+
+.project-one {
+    grid-area: po;
+}
+
+.project-two {
+    grid-area: pt;
+}
+
+.project-three {
+    grid-area: ph;
+}
+
+.project-one,
+.project-two,
+.project-three {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+img[src="img/portfolio-1.jpg"],
+img[src="img/portfolio-2.jpg"],
+img[src="img/portfolio-3.jpg"] {
+    width: 300px;
+    height: 200px;
+}
+
+.portfolio p {
+    max-width: 300px;
+    padding: 10px;
+    color: #0000006b;
+    line-height: 23.5px;
+}
+
+.portfolio h3 {
+    padding: 10px;
+}
+
+.about {
+    padding-bottom: 85px;
+    padding-top: 20px;
+}
+
+.about-here {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about h2::after {
+    content: "Less is more work";
+    position: absolute;
+    top: 77px;
+    left: 55px;
+    font-size: 19px;
+    color: #0000006b;
+}
+
+.text {
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 648px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.text p {
+    padding: 20px;
+    margin: 20px;
+    max-width: 648px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img[src="img/about.jpg"] {
+    width: 250px;
+    height: 375px;
+    margin-right: 76px;
+}
+
+.the-image {
+    position: relative;
+}
+
+.the-image::before {
+    position: absolute;
+    content: "";
+    background-color: #ebeced;
+    top: -37px;
+    left: -33px;
+    height: 450px;
+    width: 100px;
+    z-index: -1;
+}
+
+.the-image::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    top: -40px;
+    right: -14px;
+    height: 299px;
+    width: 43px;
+    z-index: -1;
+    border-bottom: 80px solid #10cab7;
+    border-left: 80px solid #10cab7;
+}
+
+.contact {
+    position: relative;
+    background-color: #f6f6f6;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.contact h2::after {
+    content: "We are born to create";
+    position: absolute;
+    top: 77px;
+    left: 52px;
+    font-size: 21px;
+    color: #0000006b;
+}
+
+.contact p {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #2c4755;
+    margin-top: 20px;
+}
+
+.contact a {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #10cab7;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.footer {
+    background-color: #2c4755;
+    font-size: 18px;
+    padding: 30px;
+    color: white;
+}
+
+.footer span {
+    color: #10cab7;
+    display: inline-block;
+    font-weight: bold;
+}
+
+@media (min-width: 280px) {
+    body {
+        min-width: 343px;
+    }
+}
+
+@media (min-width: 280px) {
+    body {
+        min-width: 343px;
+    }
+
+    .the-body p {
+        max-width: 302px;
+        font-size: 17px;
+        color: #00000096;
+        letter-spacing: 1px;
+        line-height: 34.5px;
+    }
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(11, auto);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: ". . . . i i i . . . ."". . . . d d d . . . ."" . . . . w w w . . . .";
+        padding: 10px;
+        background-color: #f6f6f6;
+        line-height: 25.5px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .four-sections {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: ". . . . . g g . . . . . "". . . . . d d . . . . ."". . . . . u u . . . . ."". . . . . w w . . . . .";
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "po po po po po po po po po po po po""pt pt pt pt pt pt pt pt pt pt pt pt ""ph ph ph ph ph ph ph ph ph ph ph ph";
+    }
+
+    .the-image::before {
+        position: absolute;
+        content: "";
+        background-color: #ebeced;
+        top: 0px;
+        left: 0px;
+        height: 0px;
+        width: 0px;
+        z-index: 0;
+    }
+
+    .the-image::after {
+        position: absolute;
+        content: "";
+        background-color: white;
+        top: 0px;
+        right: 0px;
+        height: 0;
+        width: 0;
+        z-index: 0;
+        border-bottom: 0px solid #10cab7;
+        border-left: 0px solid #10cab7;
+    }
+
+    .about-here {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .four-sections h3 {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .four-sections p {
+        padding: 10px;
+        margin: 10px;
+        line-height: 25px;
+        color: #00000080;
+        text-align: center;
+    }
+
+    .graphic::before {
+        position: absolute;
+        content: "";
+        background: url(../img/color-palette.png) no-repeat;
+        display: inline-block;
+        top: -26px;
+        left: 42%;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .design::before {
+        position: absolute;
+        content: "";
+        background: url(../img/vector.png) no-repeat;
+        display: inline-block;
+        top: -26px;
+        left: 42%;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .ui::before {
+        position: absolute;
+        content: "";
+        background: url(../img/sketch.png) no-repeat;
+        display: inline-block;
+        top: -26px;
+        left: 42%;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .develop::before {
+        position: absolute;
+        content: "";
+        background: url(../img/pencil-and-ruler.png) no-repeat;
+        display: inline-block;
+        top: -26px;
+        left: 42%;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .middle h2,
+    .portfolio h2,
+    .about h2,
+    .contact h2 {
+        font-size: 66px;
+        padding: 10px;
+        color: #00000012;
+        position: relative;
+        margin: 20px;
+    }
+
+    .middle h2::after {
+        content: "Don't be busy, be productive";
+        position: absolute;
+        top: 61px;
+        left: 43px;
+        font-size: 15px;
+        color: #0000006b;
+    }
+
+    .portfolio h2::after {
+        content: "If you do it right,it will last forever.";
+        position: absolute;
+        top: 62px;
+        left: 30px;
+        font-size: 14px;
+        color: #0000006b;
+    }
+
+    .about h2::after {
+        content: "Less is more work";
+        position: absolute;
+        top: 57px;
+        left: 20px;
+        font-size: 19px;
+        color: #0000006b;
+    }
+
+    .contact h2::after {
+        content: "We are born to create";
+        position: absolute;
+        top: 59px;
+        left: 29px;
+        font-size: 21px;
+        color: #0000006b;
+    }
+
+    .contact p {
+        font-size: 23px;
+        font-weight: bolder;
+        color: #2c4755;
+        margin-top: 20px;
+    }
+
+    .contact a {
+        text-align: center;
+        font-size: 24px;
+        text-decoration: none;
+        color: #10cab7;
+        font-weight: bolder;
+        margin: 10px;
+    }
+
+    img[src="img/about.jpg"] {
+        width: 250px;
+        height: 375px;
+        margin-right: 0px;
+    }
+
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 648px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .icon ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6;
+        position: absolute;
+        right: 0;
+        min-width: 150px;
+        top: calc(100% + 15px);
+        display: none;
+        z-index: 1;
+    }
+}
+
+/* large screen */
+@media (min-width: 969px) {
+    body {
+        min-width: 952px;
+    }
+
+    .the-body p {
+        max-width: 394px;
+        font-size: 23px;
+        color: #00000096;
+        letter-spacing: 1px;
+        line-height: 34.5px;
+    }
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(11, auto);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: ". . . . i i i . . . ."". . . . d d d . . . ."" . . . . w w w . . . .";
+        padding: 10px;
+        background-color: #f6f6f6;
+        line-height: 25.5px;
+    }
+
+    .four-sections {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: 250px 250px;
+        grid-template-areas: ". . . . g g d d . . . . "". . . . u u w w . . . ."
+    }
+
+    .image {
+        display: none;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: auto auto;
+        grid-template-areas: "po po po po po po pt pt pt pt pt pt""ph ph ph ph ph ph . . . . . . ";
+    }
+
+    img[src="img/portfolio-1.jpg"],
+    img[src="img/portfolio-2.jpg"],
+    img[src="img/portfolio-3.jpg"] {
+        width: 400px;
+        height: 300px;
+    }
+
+    .the-image {
+        position: relative;
+        left: 40px;
+    }
+
+    .four-sections h3 {
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    .four-sections p {
+        padding: 10px;
+        margin: 10px;
+        line-height: 25px;
+        color: #00000080;
+        text-align: left;
+    }
+
+    /* Icons  */
+    .design,
+    .develop,
+    .ui,
+    .graphic {
+        position: relative;
+    }
+
+    .graphic::before {
+        position: absolute;
+        content: "";
+        background: url(../img/color-palette.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .design::before {
+        position: absolute;
+        content: "";
+        background: url(../img/vector.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .ui::before {
+        position: absolute;
+        content: "";
+        background: url(../img/sketch.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .develop::before {
+        position: absolute;
+        content: "";
+        background: url(../img/pencil-and-ruler.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .middle h2,
+    .portfolio h2,
+    .about h2,
+    .contact h2 {
+        font-size: 90px;
+        padding: 10px;
+        color: #00000012;
+        position: relative;
+        margin: 20px;
+    }
+
+    .middle h2::after {
+        content: "Don't be busy, be productive";
+        position: absolute;
+        top: 77px;
+        left: 52px;
+        font-size: 21px;
+        color: #0000006b;
+    }
+
+    .portfolio h2::after {
+        content: "If you do it right,it will last forever.";
+        position: absolute;
+        top: 77px;
+        left: 37px;
+        font-size: 19px;
+        color: #0000006b;
+    }
+
+    .about h2::after {
+        content: "Less is more work";
+        position: absolute;
+        top: 77px;
+        left: 55px;
+        font-size: 19px;
+        color: #0000006b;
+    }
+
+    .contact h2::after {
+        content: "We are born to create";
+        position: absolute;
+        top: 77px;
+        left: 52px;
+        font-size: 21px;
+        color: #0000006b;
+    }
+
+    .contact p {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #2c4755;
+        margin-top: 20px;
+    }
+
+    .contact a {
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+        color: #10cab7;
+        font-weight: bolder;
+        margin: 10px;
+    }
+
+    img[src="img/about.jpg"] {
+        width: 250px;
+        height: 375px;
+        margin-right: 76px;
+    }
+
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 648px;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .icon ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6;
+        position: absolute;
+        right: 0;
+        min-width: 200px;
+        top: calc(100% + 15px);
+        display: none;
+        z-index: 1;
+    }
+}
+
+
+@media (min-width: 1281px) {
+    .the-body p {
+        max-width: 385px;
+        font-size: 23px;
+        color: #00000096;
+        letter-spacing: 1px;
+        line-height: 34.5px;
+    }
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(11, auto);
+        grid-template-rows: 300px;
+        grid-template-areas: ". . . . i d w . . . .";
+        padding: 10px;
+        background-color: #f6f6f6;
+        line-height: 25.5px;
+    }
+
+    .four-sections {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: 250px 250px;
+        grid-template-areas: ". . . g g d d s s . . . "". . . u u w w s s . . ."
+
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: 400px;
+        grid-template-areas: "po po po po pt pt pt pt ph ph ph ph";
+
+
+    }
+
+    .image {
+        display: inline-block;
+    }
+
+    .about-here {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .the-image::before {
+        position: absolute;
+        content: "";
+        background-color: #ebeced;
+        top: -37px;
+        left: -33px;
+        height: 450px;
+        width: 100px;
+        z-index: -1;
+    }
+
+    .the-image::after {
+        position: absolute;
+        content: "";
+        background-color: white;
+        top: -40px;
+        right: -14px;
+        height: 299px;
+        width: 43px;
+        z-index: -1;
+        border-bottom: 80px solid #10cab7;
+        border-left: 80px solid #10cab7;
+    }
+
+    img[src="img/portfolio-1.jpg"],
+    img[src="img/portfolio-2.jpg"],
+    img[src="img/portfolio-3.jpg"] {
+        width: 300px;
+        height: 200px;
+    }
+
+    .four-sections h3 {
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    .four-sections p {
+        padding: 10px;
+        margin: 10px;
+        line-height: 25px;
+        color: #00000080;
+        text-align: left;
+    }
+
+    /* Icons  */
+    .design,
+    .develop,
+    .ui,
+    .graphic {
+        position: relative;
+    }
+
+    .graphic::before {
+        position: absolute;
+        content: "";
+        background: url(../img/color-palette.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .design::before {
+        position: absolute;
+        content: "";
+        background: url(../img/vector.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .ui::before {
+        position: absolute;
+        content: "";
+        background: url(../img/sketch.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .develop::before {
+        position: absolute;
+        content: "";
+        background: url(../img/pencil-and-ruler.png) no-repeat;
+        display: inline-block;
+        top: 28px;
+        left: -31px;
+        width: 50px;
+        height: 50px;
+        background-size: 40px 40px;
+    }
+
+    .middle h2,
+    .portfolio h2,
+    .about h2,
+    .contact h2 {
+        font-size: 90px;
+        padding: 10px;
+        color: #00000012;
+        position: relative;
+        margin: 20px;
+    }
+
+    .middle h2::after {
+        content: "Don't be busy, be productive";
+        position: absolute;
+        top: 77px;
+        left: 52px;
+        font-size: 21px;
+        color: #0000006b;
+    }
+
+    .portfolio h2::after {
+        content: "If you do it right,it will last forever.";
+        position: absolute;
+        top: 77px;
+        left: 37px;
+        font-size: 19px;
+        color: #0000006b;
+    }
+
+    .about h2::after {
+        content: "Less is more work";
+        position: absolute;
+        top: 77px;
+        left: 55px;
+        font-size: 19px;
+        color: #0000006b;
+    }
+
+    .contact h2::after {
+        content: "We are born to create";
+        position: absolute;
+        top: 77px;
+        left: 52px;
+        font-size: 21px;
+        color: #0000006b;
+    }
+
+    .contact p {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #2c4755;
+        margin-top: 20px;
+    }
+
+    .contact a {
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+        color: #10cab7;
+        font-weight: bolder;
+        margin: 10px;
+    }
+
+    img[src="img/about.jpg"] {
+        width: 250px;
+        height: 375px;
+        margin-right: 76px;
+    }
+
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 648px;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .icon ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6;
+        position: absolute;
+        right: 0;
+        min-width: 200px;
+        top: calc(100% + 15px);
+        display: none;
+        z-index: 1;
+    }
+}
